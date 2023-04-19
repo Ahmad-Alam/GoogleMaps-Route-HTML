@@ -8,8 +8,8 @@ gmaps.configure(api_key=apiKey)
 google_maps = googlemaps.Client(key=apiKey)
 
 # Enter the starting and ending locations for the route
-start_loc = 'Rahim Yar Khan'
-end_loc = 'Lahore'
+start_loc = input("Please enter the starting location: ")
+end_loc = input("Please enter the ending location: ")
 
 # Get the directions for the route
 directions = google_maps.directions(start_loc, end_loc, mode="driving", units="metric")
